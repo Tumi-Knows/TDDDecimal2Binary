@@ -15,12 +15,13 @@ public class BinaryConverterTest {
         //Object under test
         BinaryConverter converter = new BinaryConverter();
         
-        //The following statements tests for scenario #1
+        //The following statement tests for scenario #1
         assertSame("B", converter.convert(0));
         
         //The following tests for scenario #2
         assertSame("A", converter.convert(1));
         
-        
+        //Scenario 3 test
+        assertSame("AB", converter.convert(2));
     }
 }
