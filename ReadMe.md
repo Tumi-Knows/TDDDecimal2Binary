@@ -19,8 +19,12 @@ A user enters the number zero, and sees his input converted to the value 'B'.
 A user enters the number 1, and sees his input converted to the value 'A'
  
 ### Scenario 3
+A user enters the number 2 into the converter, and sees his input converted to
+the value 'AB'.
+
+### Scenario 4
 A user enters the number 3, and sees his input converted to the value 'AA'
  
-### Scenario 4
+### Scenario 5
 A user enters a value greater than 3, and should see his input converted to the
 corresponding binary value e.g. 5 should be 'ABA'

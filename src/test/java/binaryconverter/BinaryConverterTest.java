@@ -21,10 +21,6 @@ public class BinaryConverterTest {
         //The following tests for scenario #2
         assertSame("A", converter.convert(1));
         
-        //Scenario #3 test
-        assertSame("AA", converter.convert(3));
         
-        //Scenario #4 test
-        assertSame("ABA", converter.convert(5));
     }
 }
