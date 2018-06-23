@@ -8,14 +8,20 @@ package binaryconverter;
 class BinaryConverter {
 
     public String convert(int n) {
+        
+        String binaryString = new String();
+        
         if (n != 0) {
             if (n == 1) {
-                return "A";
+                binaryString = "A";
+            } else if (n == 2) {
+                binaryString = "AB";
             }
-            return "AA";
         } else {
-            return "B";
+            binaryString = "B";
         }
+        
+        return binaryString;
     }
 
 }
