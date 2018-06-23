@@ -15,17 +15,12 @@ class BinaryConverter {
         int remainder; 
         
         if (result != 0) {
-            if (result == 1) {
-                binaryString = "A";
-            }
-            
             while(result >= 1){
-               
                 remainder = result % divisor;
                 if(remainder == 1)
-                    "A".concat(binaryString);
+                    binaryString = "A".concat(binaryString);
                 else
-                    "B".concat(binaryString);
+                   binaryString = "B".concat(binaryString);
                 result = result / divisor;
             }   
         } else {
