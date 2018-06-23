@@ -9,19 +9,30 @@ class BinaryConverter {
 
     public String convert(int n) {
         
-        String binaryString = new String();
+        String binaryString = "";
         final int divisor = 2; //2 is the common factor of all binary numbers
-        int result;
-        int remainder = n; 
+        int result = n;
+        int remainder; 
         
-        if (remainder != 0) {
-            if (remainder == 1) {
+        if (result != 0) {
+            if (result == 1) {
                 binaryString = "A";
-            } else if (n == 2) {
-                binaryString = "AB";
-            } else if (n == 3){
-                binaryString = "AA";
             }
+            
+            while(result >= 1){
+                if (result == 1){
+                    "A".concat(binaryString);
+                    result = 0;
+                    break;
+                }
+                
+                remainder = result % divisor;
+                if(remainder == 1)
+                    "A".concat(binaryString);
+                else
+                    "B".concat(binaryString);
+                result = result / divisor;
+            }   
         } else {
             binaryString = "B";
         }
