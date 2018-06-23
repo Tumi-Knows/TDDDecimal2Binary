@@ -16,10 +16,10 @@ public class BinaryConverterTest {
         BinaryConverter converter = new BinaryConverter();
         
         //The following statement tests for scenario #1
-        assertSame("B", converter.convert(0));
+        assertEquals("B", converter.convert(0));
         
         //The following tests for scenario #2
-        assertSame("A", converter.convert(1));
+        assertEquals("A", converter.convert(1));
         
         //Scenario 3 test
         assertEquals("AB", converter.convert(2));
