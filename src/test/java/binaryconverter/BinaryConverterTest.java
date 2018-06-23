@@ -29,5 +29,8 @@ public class BinaryConverterTest {
         
         //Scenario 5 test
         assertEquals("ABAB", converter.convert(10));
+        
+        //Test for 8 - which should be "ABBB"
+        assertEquals("ABBB", converter.convert(8));
     }
 }
