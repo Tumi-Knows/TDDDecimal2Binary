@@ -27,4 +27,4 @@ A user enters the number 3, and sees his input converted to the value 'AA'
  
 ### Scenario 5
 A user enters a value greater than 3, and should see his input converted to the
-corresponding binary value e.g. 5 should be 'ABA'
+corresponding binary value e.g. 10 should be 'ABAB'
