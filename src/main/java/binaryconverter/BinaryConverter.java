@@ -20,12 +20,7 @@ class BinaryConverter {
             }
             
             while(result >= 1){
-                if (result == 1){
-                    "A".concat(binaryString);
-                    result = 0;
-                    break;
-                }
-                
+               
                 remainder = result % divisor;
                 if(remainder == 1)
                     "A".concat(binaryString);
