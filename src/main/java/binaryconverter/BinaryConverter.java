@@ -16,6 +16,8 @@ class BinaryConverter {
                 binaryString = "A";
             } else if (n == 2) {
                 binaryString = "AB";
+            } else if (n == 3){
+                binaryString = "AA";
             }
         } else {
             binaryString = "B";
